@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Court Counter</string>
+    <string name="text_view_string">This is Text view</string>
+</resources>
