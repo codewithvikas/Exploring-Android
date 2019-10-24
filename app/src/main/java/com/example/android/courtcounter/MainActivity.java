@@ -77,7 +77,4 @@ public class MainActivity extends AppCompatActivity {
         displayScoreTeamB(viewModel.getScoreTeamB());
     }
 
-    public void check_score(View view) {
-        Toast.makeText(MainActivity.this,"Team A Score: "+scoreTeamA,Toast.LENGTH_SHORT).show();
-    }
 }
