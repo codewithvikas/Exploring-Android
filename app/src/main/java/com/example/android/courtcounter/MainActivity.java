@@ -3,6 +3,7 @@ package com.example.android.courtcounter;
 import android.arch.lifecycle.ViewModel;
 import android.arch.lifecycle.ViewModelProvider;
 import android.arch.lifecycle.ViewModelProviders;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.GestureDetector;
@@ -77,4 +78,13 @@ public class MainActivity extends AppCompatActivity {
         displayScoreTeamB(viewModel.getScoreTeamB());
     }
 
+    public void sendScore(View view) {
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setType("*/*");
+        intent.putExtra(Intent.EXTRA_EMAIL, "addresses");
+        intent.putExtra(Intent.EXTRA_SUBJECT, "subject");
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+    }
 }

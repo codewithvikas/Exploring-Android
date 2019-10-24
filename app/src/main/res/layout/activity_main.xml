@@ -128,9 +128,21 @@
         android:layout_height="wrap_content"
         android:text="Reset"
         android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="32dp"
         android:onClick="resetScore"
-        style="@style/resetStyle"/>
+        style="@style/buttonStyle1"/>
+
+    <Button
+        android:id="@+id/send_button"
+        style="@style/buttonStyle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/reset_button"
+        android:layout_toEndOf="@id/reset_button"
+        android:onClick="sendScore"
+        android:layout_centerHorizontal="true"
+        android:text="Send"
+        android:layout_toRightOf="@id/reset_button" />
 
 </RelativeLayout>
