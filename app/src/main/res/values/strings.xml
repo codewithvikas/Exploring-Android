@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Court Counter</string>
     <string name="text_view_string">This is Text view</string>
+    <string name="title_activity_team_detail">TeamDetailActivity</string>
+    <string name="activity_team_detail">Team Detail</string>
 </resources>
