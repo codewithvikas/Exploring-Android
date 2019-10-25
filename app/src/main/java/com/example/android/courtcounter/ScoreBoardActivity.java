@@ -1,18 +1,14 @@
 package com.example.android.courtcounter;
 
-import android.arch.lifecycle.ViewModel;
-import android.arch.lifecycle.ViewModelProvider;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.GestureDetector;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class ScoreBoardActivity extends AppCompatActivity {
     int scoreTeamA = 0,scoreTeamB = 0;
 
     ScoreViewModel viewModel;
@@ -20,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_score_board);
 
         viewModel = ViewModelProviders.of(this).get(ScoreViewModel.class);
 
