@@ -4,6 +4,7 @@ import android.arch.lifecycle.ViewModel;
 import android.arch.lifecycle.ViewModelProvider;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.GestureDetector;
@@ -80,9 +81,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void sendScore(View view) {
         Intent intent = new Intent(Intent.ACTION_SENDTO);
-        intent.setType("*/*");
-        intent.putExtra(Intent.EXTRA_EMAIL, "addresses");
-        intent.putExtra(Intent.EXTRA_SUBJECT, "subject");
+        intent.setData(Uri.parse("mailto:")); // only email apps should handle this
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Score Board");
+        intent.putExtra(Intent.EXTRA_TEXT,"TeamA: "+scoreTeamA+" TeamB: "+scoreTeamB);
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
         }
