@@ -8,11 +8,11 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class SourceViewModelTest {
+public class ScoreViewModelTest {
     @Test
     public void it_should_set_and_get_score_teamA() {
         // Given
-        SourceViewModel view = new SourceViewModel();
+        ScoreViewModel view = new ScoreViewModel();
         view.setScoreTeamA(61);
 
         // When
@@ -25,7 +25,7 @@ public class SourceViewModelTest {
     @Test
     public void it_should_set_and_get_score_teamB() {
         // Given
-        SourceViewModel view = new SourceViewModel();
+        ScoreViewModel view = new ScoreViewModel();
         view.setScoreTeamB(55);
 
         // When
