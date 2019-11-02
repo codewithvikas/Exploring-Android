@@ -9,9 +9,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class TeamDetailActivity extends AppCompatActivity {
 
     TextView teamA,teamB;
+    ArrayList<UserInput> userInputs;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,12 +22,27 @@ public class TeamDetailActivity extends AppCompatActivity {
         teamA = findViewById(R.id.teamA_tv);
         teamB = findViewById(R.id.teamB_tv);
 
+        userInputs = new ArrayList<>();
         updateTeamDetail();
+        updateUserInput();
+
 
     }
 
+    private void updateUserInput() {
+        userInputs.add(new UserInput("mohan",2));
+        userInputs.add(new UserInput("ram",4));
+        userInputs.add(new UserInput("ramesh",6));
+        userInputs.add(new UserInput("ali",9));
+        userInputs.add(new UserInput("sardar",78));
+        userInputs.add(new UserInput("pankaj",9));
+        userInputs.add(new UserInput("roshan",20));
+    }
+
     public void openScoreBoard(View view) {
-        Intent intent = new Intent(this,ScoreBoardActivity.class);
+        Intent intent = new Intent(this,DynamicTableActivity.class);
+
+        intent.putParcelableArrayListExtra("userInputs",userInputs);
         startActivity(intent);
     }
 

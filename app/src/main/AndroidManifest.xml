@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".DynamicTableActivity"></activity>
         <activity
             android:name=".TeamDetailActivity"
             android:label="@string/activity_team_detail"
@@ -23,7 +24,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity android:name=".ScoreBoardActivity">
             <intent-filter>
