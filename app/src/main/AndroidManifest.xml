@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.courtcounter">
+    package="com.codewithvikas.exploring.android">
 
     <application
         android:allowBackup="true"
@@ -9,23 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DynamicTableActivity"></activity>
         <activity
-            android:name=".TeamDetailActivity"
-            android:label="@string/activity_team_detail"
-            android:parentActivityName="android.support.v7.app.AppCompatActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="android.support.v7.app.AppCompatActivity" />
-
+            android:name="com.codewithvikas.exploring.android.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ScoreBoardActivity">
+        <activity android:name="com.codewithvikas.exploring.android.ScoreBoardActivity"
+            android:label="@string/score_board">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 

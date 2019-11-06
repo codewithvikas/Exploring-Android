@@ -1,4 +1,4 @@
-package com.example.android.courtcounter;
+package com.codewithvikas.exploring.android;
 
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
@@ -7,9 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import java.util.ArrayList;
 
 public class ScoreBoardActivity extends AppCompatActivity {
     int scoreTeamA = 0,scoreTeamB = 0;

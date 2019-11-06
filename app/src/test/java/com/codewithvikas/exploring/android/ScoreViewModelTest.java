@@ -1,9 +1,6 @@
 
-package com.example.android.courtcounter;
+package com.codewithvikas.exploring.android;
 
-import android.arch.lifecycle.ViewModelProviders;
-
-import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
