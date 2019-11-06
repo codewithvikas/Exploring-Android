@@ -18,14 +18,4 @@
         app:layout_constraintBottom_toBottomOf="parent"
         style="@style/textViewStyle1"
         android:text="@string/welcome_note"/>
-
-<Button
-    android:id="@+id/open_scoreboard_bt"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Open Scoreboard"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    android:onClick="openScoreBoard"/>
 </android.support.constraint.ConstraintLayout>

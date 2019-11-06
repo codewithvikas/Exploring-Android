@@ -17,10 +17,4 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
-    public void openScoreBoard(View view) {
-        Intent intent = new Intent(this,ScoreBoardActivity.class);
-        startActivity(intent);
-    }
-
 }

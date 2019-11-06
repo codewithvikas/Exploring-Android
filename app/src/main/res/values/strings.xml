@@ -1,9 +1,5 @@
 <resources>
     <string name="app_name">Exploring Android</string>
-    <string name="text_view_string">This is Text view</string>
-    <string name="title_activity_team_detail">TeamDetailActivity</string>
-    <string name="activity_team_detail">Team Detail</string>
     <string name="activity_main">Main Activity</string>
-    <string name="welcome_note">Welcome to Main Activity.Lets Explore Java Basics</string>
-    <string name="score_board">Score Board</string>
+    <string name="welcome_note">Welcome to Main Activity.Lets Explore Android.Checkout Various Exercise Branches.</string>
 </resources>
