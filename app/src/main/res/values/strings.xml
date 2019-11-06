@@ -4,5 +4,5 @@
     <string name="activity_main">Main Activity</string>
     <string name="activity_recyclerview">Recycler View Example</string>
     <string name="buttion_main_activity">Open Activity</string>
-    <string name="welcome_note">Welcome To Main Activity.Passing Object via Intent.</string>
+    <string name="welcome_note">Welcome To Main Activity.Exploring RecyclerView.</string>
 </resources>
