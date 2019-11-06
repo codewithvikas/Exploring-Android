@@ -5,34 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".TeamDetailActivity"
-    tools:showIn="@layout/activity_team_detail">
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
 
     <TextView
-        android:id="@+id/teamA_tv"
+        android:id="@+id/welcome_tv_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/welcome_note"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/teamB_tv"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/textViewStyle1"
 
-    <TextView
-        android:id="@+id/teamB_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/teamA_tv"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:lineSpacingMultiplier="2"/>
+
 
 <Button
-    android:id="@+id/open_scoreboard_bt"
+    android:id="@+id/open_activity_bt"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Open Scoreboard"
+    android:text="@string/buttion_main_activity"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"

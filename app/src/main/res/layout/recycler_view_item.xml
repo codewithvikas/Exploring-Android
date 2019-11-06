@@ -7,11 +7,15 @@
         android:id="@+id/cell1"
         android:layout_width="0dp"
         android:layout_weight="1"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        style="@style/textViewStyle1"
+        android:background="@android:color/holo_green_light"/>
     <TextView
         android:id="@+id/cell2"
         android:layout_width="0dp"
         android:layout_weight="1"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        style="@style/textViewStyle1"
+        android:background="@android:color/holo_green_light"/>
 
 </LinearLayout>

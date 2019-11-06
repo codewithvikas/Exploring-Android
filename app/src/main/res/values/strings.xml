@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">Court Counter</string>
+    <string name="app_name">Exploring Android</string>
     <string name="text_view_string">This is Text view</string>
-    <string name="title_activity_team_detail">TeamDetailActivity</string>
-    <string name="activity_team_detail">Team Detail</string>
+    <string name="activity_main">Main Activity</string>
+    <string name="activity_recyclerview">Recycler View Example</string>
+    <string name="buttion_main_activity">Open Activity</string>
+    <string name="welcome_note">Welcome To Main Activity.Passing Object via Intent.</string>
 </resources>
