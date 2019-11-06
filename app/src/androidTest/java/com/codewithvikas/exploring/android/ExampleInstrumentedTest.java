@@ -1,4 +1,4 @@
-package com.example.android.courtcounter;
+package com.codewithvikas.exploring.android;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
