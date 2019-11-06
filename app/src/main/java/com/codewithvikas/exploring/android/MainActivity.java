@@ -4,9 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.TextView;
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,6 +14,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openRecyclerViewActivity(View view) {
-        startActivity(new Intent(this,RecyclerViewActivity.class));
+        startActivity(new Intent(this, ListView2Activity.class));
     }
 }

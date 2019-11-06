@@ -6,16 +6,26 @@
     <TextView
         android:id="@+id/cell1"
         android:layout_width="0dp"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:layout_height="wrap_content"
-        style="@style/textViewStyle1"
-        android:background="@android:color/holo_green_light"/>
+        style="@style/textViewStyle1" />
     <TextView
         android:id="@+id/cell2"
         android:layout_width="0dp"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:layout_height="wrap_content"
-        style="@style/textViewStyle1"
-        android:background="@android:color/holo_green_light"/>
+        style="@style/textViewStyle1" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1.0"
+        />
+</LinearLayout>
+
 
 </LinearLayout>
