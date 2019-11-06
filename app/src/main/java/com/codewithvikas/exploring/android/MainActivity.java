@@ -10,7 +10,6 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView teamA,teamB;
     ArrayList<UserInput> userInputs;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         userInputs.add(new UserInput("roshan",20));
     }
 
-    public void openScoreBoard(View view) {
+    public void openRecyclerViewActivity(View view) {
         Intent intent = new Intent(this, RecyclerViewActivity.class);
 
         intent.putParcelableArrayListExtra("userInputs",userInputs);
